@@ -1,5 +1,5 @@
 {
-  "name": "Babel Preset React",
+  "name": "babel-present-react",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -8,6 +8,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^7.0.1"
   }
 }

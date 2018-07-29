@@ -1,4 +1,5 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+    babel = require('gulp-babel');
 
 var CONFIG = {
     src: {
@@ -15,6 +16,7 @@ gulp.task('js', function () {
     return gulp.src([
         CONFIG.src.js + '*.js'
     ])
+        .pipe(babel({presets: ['react']}))
         .pipe(gulp.dest(CONFIG.dest.js.dir));
 });
 
